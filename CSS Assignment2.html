@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Assignment 2</title>
+</head>
+<style>
+    body{
+        background-color: rgb(58, 137, 173);
+    }
+    .container{
+            height: 500px;
+            background-color: white;
+            width: 500px;
+            position: absolute;
+            left: 420px;
+            top: 90px;
+            border-radius: 5px;
+
+    }
+    h2{
+        text-align: center;
+        top: 20px;
+        font-family: Arial, Helvetica, sans-serif;
+        color: rgb(104, 100, 100);
+
+    }
+    .email{
+        position: relative;
+        margin: 10px;
+        width: 370px;
+        height: 50px;
+        left: 50px;
+        
+    }
+    .password{
+        position: relative;
+        margin: 10px;
+        width: 370px;
+        height: 50px;
+        left: 50px;
+        
+    }
+    .checkbox{
+        position: relative;
+        margin: 10px;
+        left: 50px;
+        
+        
+    }
+    .button{
+        position: relative;
+        margin: 10px;
+        background-color: rgb(58, 137, 173);
+        height: 50px;
+        width: 380px;
+        border-style: none;
+        color: white;
+        left: 50px;
+    }
+    input{
+        
+        border: 1px solid rgb(179, 178, 178);
+    }
+    .forgot{
+        text-align: center;
+    }
+    .signup{
+        text-align: center;
+    }
+    a{
+        color: rgb(58, 137, 173);
+    }
+    .showpassword{
+        position: absolute;
+        left: 78px;
+        top: 261px;
+    }
+</style>
+<body>
+    <div class="container">
+        <h2>Login</h2>
+        
+        <form action="#">
+            <label for="email" class="email">Email:</label>
+            <div>
+                <input type="email" name="My email" placeholder="Enter email" id="email" class="email">
+            </div>
+            <br>
+            <label for="password" class="password">Password:</label>
+            <div>
+                <input type="password" name="password" placeholder="Enter password" id="password" class="password">
+            </div>
+            <div>
+                <input type="checkbox" name="showpassword" class="checkbox"> <p class="showpassword">Show Password</p>
+            </div>
+            <br> 
+            <div>
+                <input type="button" value="SIGN IN" class="button">
+            </div>
+            <br>
+            <div class="forgot"> Forgot <a href="#">UserName/Password?</a></div>
+            <br>
+            <div class="signup"> Dont have an account? <a href="#">SignUp</a></div>
+        </form>
+    </div>
+</body>
+</html>
